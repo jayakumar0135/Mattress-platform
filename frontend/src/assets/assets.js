@@ -8,6 +8,10 @@ import dropdown_icon from './dropdown_icon.png';
 import exchange_icon from './exchange_icon.png';
 import quality_icon from './quality_icon.png';
 import support_img from './support_img.png';
+import search_icon from './search_icon.png';
+import cross_icon from './cross_icon.png';
+import star_icon from './star_icon.png';
+import dull_icon from'./dull_icon.png';
 
 
 // Images for the All dresses
@@ -29,7 +33,11 @@ export const assets = {
   hero_img,
   exchange_icon,
   quality_icon,
-  support_img
+  support_img,
+  search_icon,
+  cross_icon,
+  star_icon,
+  dull_icon
 };
 
 export const products = [
