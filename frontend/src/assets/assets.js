@@ -12,6 +12,7 @@ import search_icon from './search_icon.png';
 import cross_icon from './cross_icon.png';
 import star_icon from './star_icon.png';
 import dull_icon from'./dull_icon.png';
+import bin_icon from './bin_icon.png';
 
 
 // Images for the All dresses
@@ -37,7 +38,8 @@ export const assets = {
   search_icon,
   cross_icon,
   star_icon,
-  dull_icon
+  dull_icon,
+  bin_icon
 };
 
 export const products = [

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
 import Home from './pages/Home';
 import Collections from './pages/Collections';
 import About from './pages/About';
@@ -16,6 +17,7 @@ import SearchBar from './components/SearchBar';
 const App = () => {
   return (
         <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+          <ToastContainer />
           <Navbar />
           <SearchBar />
           <Routes>
@@ -23,8 +25,9 @@ const App = () => {
             <Route path="/collections" element={<Collections />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/collections/:category/:productId" element={<Product />} /> {/* ✅ Fix route for category & productId */}
+            <Route path="/collections/:category/:productId" element={<Product />} />
             <Route path="/product/:productId" element={<Product />} /> {/* ✅ Alternative route if no category is needed */}
+            <Route path="/collections/product/:category/:productId" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/login" element={<Login />} />
             <Route path="/place-order" element={<PlaceOrder />} />
