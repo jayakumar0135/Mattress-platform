@@ -21,18 +21,18 @@ const App = () => {
           <Navbar />
           <SearchBar />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/collections" element={<Collections />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/collections/:category/:productId" element={<Product />} />
-            <Route path="/product/:productId" element={<Product />} /> {/* ✅ Alternative route if no category is needed */}
-            <Route path="/collections/product/:category/:productId" element={<Product />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/place-order" element={<PlaceOrder />} />
-            <Route path="/orders" element={<Orders />} />
-          </Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/collections" element={<Collections />} />
+  <Route path="/about" element={<About />} />
+  <Route path="/contact" element={<Contact />} />
+  <Route path="/product/:productId" element={<Product />} />
+  <Route path="/collections/product/:productId" element={<Product />} /> {/* ✅ New Route */}
+  <Route path="/cart" element={<Cart />} />
+  <Route path="/login" element={<Login />} />
+  <Route path="/place-order" element={<PlaceOrder />} />
+  <Route path="/orders" element={<Orders />} />
+</Routes>
+
           <Footer />
         </div>
 

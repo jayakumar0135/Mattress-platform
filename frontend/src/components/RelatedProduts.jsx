@@ -8,18 +8,15 @@ const RelatedProducts = ({ category, subCategory }) => {
   const [related, setRelated] = useState([]);
 
   useEffect(() => {
-    if (!products || products.length === 0 || !category || !subCategory) return;
+      if(products.length > 0){
+        let productsCopy = products.slice();
 
-    console.log("Category:", category);
-    console.log("SubCategory:", subCategory);
-    console.log("Filtering related products...");
+        productsCopy = productsCopy.filter((item) => category === item.category);
+        productsCopy = productsCopy.filter((item) => subCategory === item.subCategory);
 
-    const filteredProducts = products
-      .filter((item) => item.category === category && item.subCategory === subCategory)
-      .slice(0, 5);
-
-    setRelated(filteredProducts);
-  }, [products, category, subCategory]);
+        setRelated(productsCopy.slice(0,5));
+      }
+  }, [products]);
 
   return (
     <div className="my-24">
@@ -28,8 +25,8 @@ const RelatedProducts = ({ category, subCategory }) => {
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 gap-y-6">
         {related.length > 0 ? (
-          related.map((item) => (
-            <ProductItem key={item._id} id={item._id} name={item.name} price={item.price} image={item.image} />
+          related.map((item,index) => (
+            <ProductItem key={index} id={item._id} name={item.name} price={item.price} image={item.image} />
           ))
         ) : (
           <p className="col-span-5 text-center text-gray-500">No related products found.</p>

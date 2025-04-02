@@ -13,6 +13,8 @@ import cross_icon from './cross_icon.png';
 import star_icon from './star_icon.png';
 import dull_icon from'./dull_icon.png';
 import bin_icon from './bin_icon.png';
+import stripe_logo from './stripe_logo.png';
+import Razorpay_logo from './Razorpay_logo.png';
 
 
 // Images for the All dresses
@@ -39,7 +41,9 @@ export const assets = {
   cross_icon,
   star_icon,
   dull_icon,
-  bin_icon
+  bin_icon,
+  stripe_logo,
+  Razorpay_logo
 };
 
 export const products = [
@@ -57,12 +61,12 @@ export const products = [
   },
   {
     _id: "cccc",
-    name: "Women's Floral Dress",
-    description: "A beautiful floral dress for any occasion.",
+    name: "Women Round Neck",
+    description: "A Good Dress",
     price: 150,
     image: [p_img3],
     category: "Women",
-    subCategory: "Dresses",
+    subCategory: "Topwear",
     sizes: ["S", "M", "L", "XL"],
     date: 17276,
     bestseller: true
