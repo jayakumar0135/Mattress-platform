@@ -15,6 +15,7 @@ import dull_icon from'./dull_icon.png';
 import bin_icon from './bin_icon.png';
 import stripe_logo from './stripe_logo.png';
 import Razorpay_logo from './Razorpay_logo.png';
+import about from './about.png';
 
 
 // Images for the All dresses
@@ -43,7 +44,8 @@ export const assets = {
   dull_icon,
   bin_icon,
   stripe_logo,
-  Razorpay_logo
+  Razorpay_logo,
+  about
 };
 
 export const products = [
